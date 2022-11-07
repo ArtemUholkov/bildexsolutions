@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0 auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .about_us__title {
   display: flex;
@@ -15,11 +16,7 @@ h2 {
   font-size: 30px;
   white-space: nowrap;
 }
-.decoration_stripe {
-  height: 2px;
-  background-color: #499100;
-  width: 100%;
-}
+
 .about_us__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -48,4 +45,11 @@ h2 {
   max-width: 520px;
   width: 100%;
   align-self: center;
+}
+
+@media (max-width: 700px) {
+  .about_us__content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }

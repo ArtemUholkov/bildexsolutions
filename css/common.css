@@ -146,14 +146,15 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
+.decoration_stripe {
+  height: 2px;
+  background-color: #499100;
+  width: 100%;
+}
 /*COMMONT STYLES END*/
 @media (max-width: 1160px) {
   .container {
     width: 95%;
-  }
-}
-@media (max-width: 540px) {
-  .container {
-    width: 100%;
   }
 }
