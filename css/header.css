@@ -1,14 +1,15 @@
 header {
-  height: 100vh;
 }
+
 .header_wrapper {
   display: flex;
   align-items: center;
   height: 112px;
   z-index: 3;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
 }
 
 .header_container {
@@ -34,7 +35,10 @@ header {
   background-color: white;
   transition: 0.2s;
 }
-
+.wrap_togather_logo_number {
+  display: flex;
+  gap: 50px;
+}
 .logo_wrapper {
   cursor: pointer;
 }
@@ -55,8 +59,6 @@ header {
   text-decoration: none;
   color: black;
   transition: all 0.5s;
-  flex: 1;
-  margin-left: 100px;
 }
 .phone_call:hover {
   color: #499100;
@@ -155,15 +157,16 @@ header {
     right: 100%;
     width: 100%;
     height: calc(100vh - 112px);
-    z-index: 5;
+    z-index: 50;
     display: none;
     overflow: hidden;
-    bottom: 0;
+    top: 112px;
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.7);
   }
 
   .popup.open {
+    position: fixed;
     left: 0;
     display: flex;
     animation-duration: 0.5s;
@@ -285,12 +288,16 @@ header {
 .photo_wrapper {
   z-index: 1;
 }
+.main_photo_wrapper {
+  height: 100vh;
+  position: relative;
+}
 .main_photo {
   position: absolute;
   top: 115px;
   left: 0;
   width: 100%;
-  height: calc(100% - 115px);
+  height: calc(100vh - 115px);
   object-fit: cover;
 }
 
@@ -359,8 +366,9 @@ h1 {
   }
 }
 @media (max-width: 760px) {
-  .phone_call {
-    margin-left: 20px;
+  .wrap_togather_logo_number {
+    display: flex;
+    gap: 20px;
   }
 }
 @media (max-width: 525px) {
