@@ -6,6 +6,9 @@ header {
   align-items: center;
   height: 112px;
   z-index: 3;
+  background-color: white;
+  position: sticky;
+  top: 0;
 }
 
 .header_container {
