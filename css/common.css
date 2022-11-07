@@ -152,6 +152,18 @@ body {
   background-color: #499100;
   width: 100%;
 }
+
+h2 {
+  display: block;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+h3 {
+  display: block;
+  font-size: 25px;
+  white-space: nowrap;
+}
 /*COMMONT STYLES END*/
 @media (max-width: 1160px) {
   .container {
