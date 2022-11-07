@@ -1,3 +1,6 @@
+.window_wells {
+  margin-bottom: 100px;
+}
 .window_wells__title {
   display: flex;
   justify-content: center;
