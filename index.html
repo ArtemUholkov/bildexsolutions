@@ -14,7 +14,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Bildexsolutions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Bildex Solutions</title>
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
@@ -214,9 +215,106 @@
             <span class="decoration_stripe thin_stripe"></span>
           </div>
         </div>
+
+        <div
+          style="--swiper-navigation-color: #499100; --swiper-pagination-color: #fff"
+          class="swiper mySwiper2"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www6.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www7.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www9.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/windowwells_gallary/www10.jpg" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www6.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www7.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www9.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="not_cover" src="img/windowwells_gallary/www10.jpg" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper('.mySwiper2', {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>

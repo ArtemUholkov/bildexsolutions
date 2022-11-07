@@ -122,6 +122,49 @@ h4 {
   margin-bottom: 50px;
 }
 
+.swiper {
+  width: 100%;
+  max-width: 1240px;
+  height: 500px;
+}
+.swiper-slide img {
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.mySwiper2 {
+  width: 100%;
+}
+
+.mySwiper {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide .not_cover {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 700px) {
   .window_wells_info_items {
     grid-template-columns: 1fr;
