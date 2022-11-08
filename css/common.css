@@ -142,7 +142,7 @@ body {
   width: 100%;
   position: relative;
 }
-.container {
+.mycontainer {
   width: 80%;
   margin: 0 auto;
 }
@@ -165,8 +165,13 @@ h3 {
   white-space: nowrap;
 }
 /*COMMONT STYLES END*/
-@media (max-width: 1160px) {
-  .container {
+@media (max-width: 1300px) {
+  .mycontainer {
+    width: 95%;
+  }
+}
+@media (max-width: 760px) {
+  .mycontainer {
     width: 95%;
   }
 }

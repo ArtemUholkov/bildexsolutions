@@ -25,6 +25,7 @@ header {
   justify-content: space-between;
   height: 100%;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .stick {
@@ -37,6 +38,7 @@ header {
 }
 .wrap_togather_logo_number {
   display: flex;
+  align-items: center;
   gap: 50px;
 }
 .logo_wrapper {
@@ -71,7 +73,17 @@ header {
 .phone_text {
   font-size: 16px;
 }
-
+.header_button {
+  height: 50px;
+  width: 130px;
+  margin: 0 auto;
+  letter-spacing: 0.2px;
+  background-color: #499100;
+  border: 0;
+}
+.header_button:hover {
+  background-color: #83b84e;
+}
 .burger {
   display: none;
 }
@@ -124,7 +136,7 @@ header {
   width: 100%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
   .navbar_menu {
     display: none;
   }
@@ -300,6 +312,7 @@ header {
   width: 100%;
   height: calc(100vh - 115px);
   object-fit: cover;
+  object-position: 0 100%;
 }
 
 .filter {
@@ -338,7 +351,7 @@ h1 {
 .title_circle {
   width: 64px;
   height: 64px;
-  border: black 2px solid;
+  border: #499100 4px solid;
   position: absolute;
   bottom: 60px;
   left: calc(50% - 32px);
@@ -349,6 +362,9 @@ h1 {
   justify-content: center;
   animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
   cursor: pointer;
+}
+.title_arrow {
+  color: #499100;
 }
 
 @keyframes bounce {
@@ -372,7 +388,7 @@ h1 {
     gap: 20px;
   }
 }
-@media (max-width: 525px) {
+@media (max-width: 1210px) {
   .phone_text {
     display: none;
   }
@@ -383,8 +399,54 @@ h1 {
     flex: auto;
   }
 }
+@media (max-width: 1210px) {
+  .navbar {
+    width: 100%;
+  }
+}
 @media (max-width: 400px) {
   .logo_wrapper {
     padding: 10px 10px;
   }
+  .wrap_togather_logo_number {
+    gap: 10px;
+  }
+  .phone_number_icon {
+    margin-right: 7px;
+  }
+}
+@media (max-width: 565px) {
+  .logo_wrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 505px) {
+  .logo_text {
+    display: none;
+  }
+}
+
+.corner_button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  z-index: 15;
+  background-color: #499100;
+  transition: all 0.5s;
+  border: 0;
+}
+.corner_button:hover {
+  background-color: #83b84e;
+  transition: all 0.5s;
+}
+.but_icon {
+  font-size: 25px;
 }
