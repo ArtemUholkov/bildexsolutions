@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(222, 250, 252);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+}
+.header_wrapper {
+  position: relative;
+}
+.text_wrapper {
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.thank_you_text {
+  font-size: 50px;
+}
+.header_button {
+  display: none;
+}
