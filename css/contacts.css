@@ -64,4 +64,11 @@
   .contacts_info {
     gap: 30px;
   }
+  .contacts_phone_call {
+    gap: 5px;
+  }
+  .contacts_phone_number {
+    margin: 0;
+    padding: 0;
+  }
 }
