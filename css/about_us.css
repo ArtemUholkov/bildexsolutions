@@ -12,7 +12,6 @@
   margin-bottom: 30px;
 }
 
-
 .about_us__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -48,4 +47,13 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }

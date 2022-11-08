@@ -5,7 +5,7 @@ header {
   display: flex;
   align-items: center;
   height: 112px;
-  z-index: 3;
+  z-index: 100;
   background-color: rgba(255, 255, 255, 0.85);
   position: fixed;
   top: 0;

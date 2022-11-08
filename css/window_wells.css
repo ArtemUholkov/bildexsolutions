@@ -30,7 +30,7 @@
   align-self: center;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 20px;
 }
 .short_stripe {
@@ -172,6 +172,7 @@ h4 {
   .window_wells_info_items {
     grid-template-columns: 1fr;
   }
+
   .ww_models_wrapper {
     grid-template-columns: 1fr;
   }
@@ -181,4 +182,26 @@ h4 {
   .ww_instalations_content_image {
     width: 350px;
   }
+  .items_image_reverse > .items_image_reverse_item {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: transform 400ms ease-in;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
 }
