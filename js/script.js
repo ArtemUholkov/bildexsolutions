@@ -35,3 +35,8 @@ function burgerHandler(e) {
   }
   burger.classList.toggle('active');
 }
+function myFunction() {
+  setTimeout(() => {
+    window.location.href = 'thankyou.html';
+  }, 2000);
+}
