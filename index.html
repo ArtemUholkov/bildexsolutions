@@ -59,8 +59,8 @@
             </div>
             <ul class="navbar_menu">
               <li><a class="nav_elem" href="#">Home</a></li>
-              <li><a class="nav_elem" href="#about_us">About us</a></li>
-              <li><a class="nav_elem" href="#window_wells">Window Wells</a></li>
+              <li><a class="nav_elem" href="#about_us">Window Wells</a></li>
+              <li><a class="nav_elem" href="#window_wells">Features</a></li>
               <li><a class="nav_elem" href="#contact">Contact</a></li>
             </ul>
             <div class="burger">
@@ -90,8 +90,8 @@
       <div class="popup_textblock" id="popupSlide">
         <ul class="navbar_menu_mobile">
           <li><a class="nav_elem_mobile" href="#">Home</a></li>
-          <li><a class="nav_elem_mobile" href="#about_us">About us</a></li>
-          <li><a class="nav_elem_mobile" href="#window_wells">Window Wells</a></li>
+          <li><a class="nav_elem_mobile" href="#about_us">Window Wells</a></li>
+          <li><a class="nav_elem_mobile" href="#window_wells">Features</a></li>
           <li><a class="nav_elem_mobile" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -100,24 +100,49 @@
       <div class="mycontainer">
         <div class="about_us__title">
           <span class="decoration_stripe"></span>
-          <h2>About us</h2>
+          <h2>Window Wells</h2>
           <span class="decoration_stripe"></span>
         </div>
         <div class="about_us__content">
           <div class="about_us__content_text fade-in">
-            <span class="about_us__content_text_title"
-              >BILDEX solutions has been researching, promoting and offering products for over 30
-              years.</span
-            >
-            <span class="about_us__content_text_info"
-              >With over 30 years of experience, BILDEX Solutions has provided clients with a
-              personalized touch. At BILDEX, we strive to provide all our clients with the latest in
-              product design and innovation. All our products and designs share a combination of
-              aesthetics, functionality and versatility.
-            </span>
+            <h5><span class="h5_text_center"> PRODUCT ADVANTAGES AT A GLANCE</span></h5>
+            <div class="about_us_text_block">
+              <span class="about_us_titles">Adjustable in heights</span>
+              <span class="about_us_texts"
+                >With its integrated height-adjustable attachment, the MEAMAX light well can be
+                adjusted by up to 25 cm to align it with ground level, either during installation or
+                subsequently - without having to drill new holes, purchase any additional
+                accessories or waste valuable time</span
+              >
+            </div>
+            <div class="about_us_text_block">
+              <span class="about_us_titles">6 sizes</span>
+              <span class="about_us_texts"
+                >One light well in six different sizes with the right accessories for every
+                situation: car passable with suitable gratings</span
+              >
+            </div>
+            <div class="about_us_text_block">
+              <span class="about_us_titles">Thermal bridge-free mounting</span>
+              <span class="about_us_texts"
+                >Thermal bridge-free or thermal bridge-free and water pressure-tight installation
+                when used with the MEAFIX insulated mounting panel and a suitable fastening
+                set.</span
+              >
+            </div>
           </div>
-          <div class="about_us_image_wrapper">
-            <img src="img/about_us/1.jpg" alt="gabion basket" class="about_us_image fade-in" />
+          <div class="about_us_image_wrapper fade-in">
+            <div class="swiper mySwiper3 swiper3_custom">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/about_us/ww-site-slide.jpg" class="about_us_slider_image" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/about_us/ww-site-slide2.jpg" class="about_us_slider_image" alt="" />
+                </div>
+              </div>
+              <div class="swiper-pagination swiper3_pagi"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -126,7 +151,7 @@
       <div class="mycontainer">
         <div class="window_wells__title">
           <span class="decoration_stripe"></span>
-          <h2>Window Wells</h2>
+          <h2>Features</h2>
           <span class="decoration_stripe"></span>
         </div>
         <div class="window_wells_content">
@@ -514,8 +539,8 @@
           <div class="footer_pages">
             <span class="go_back">Go back to:</span>
             <a class="footer_nav_elem" href="#">Home</a>
-            <a class="footer_nav_elem" href="#about_us">About us</a>
-            <a class="footer_nav_elem" href="#window_wells">Window Wells</a>
+            <a class="footer_nav_elem" href="#about_us">Window Wells</a>
+            <a class="footer_nav_elem" href="#window_wells">Features</a>
             <a class="footer_nav_elem" href="#contact">Contact</a>
           </div>
           <div class="footer_contacts">
@@ -573,6 +598,20 @@
         },
         thumbs: {
           swiper: swiper,
+        },
+      });
+      var swiper3 = new Swiper('.mySwiper3', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
         },
       });
     </script>
