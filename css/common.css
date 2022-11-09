@@ -166,7 +166,7 @@ h3 {
   white-space: nowrap;
 }
 /*COMMONT STYLES END*/
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .mycontainer {
     width: 95%;
   }
