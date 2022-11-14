@@ -223,6 +223,12 @@
     background-color: gray;
     color: white;
   }
+  .phone_in_burger {
+    margin-top: 30px;
+  }
+  .burger_phone_call {
+    justify-content: center;
+  }
 
   .popup_textblock.slidein {
     position: relative;
