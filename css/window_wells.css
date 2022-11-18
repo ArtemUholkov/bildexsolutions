@@ -226,3 +226,14 @@ h4 {
 .from-right.appear {
   transform: translateX(0);
 }
+.gallary_img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 500px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
