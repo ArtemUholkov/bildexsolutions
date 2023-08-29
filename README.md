@@ -25,6 +25,6 @@ I used HTML, CSS, JS in this project.
  <form action="https://postmail.invotes.com/send" method="post" id="email_form">
 ```
 
-4. All sections appear on scroll down
+3. All sections appear on scroll down
 
 ---
